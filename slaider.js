@@ -215,3 +215,13 @@ button3.addEventListener('blur', function() {
 });
 
 
+function validateForm() {
+    var email = document.getElementById('email').value;
+    if (!email.includes('@')) {
+        alert('Пожалуйста, введите корректный email');
+        return false;
+    }
+    return true;
+}
+
+
