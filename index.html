@@ -141,10 +141,12 @@
         </article>
         <article>
             <div class="container5">
-                <input class="input1" type="text" placeholder=" name">
-                <input class="input2" type="text" placeholder=" EMail">
+            <form onsubmit="return validateForm()">
+                <input class="input1" type="text" pattern="[0-9]{10}" placeholder="Пароль из 10 цифр">
+                <input class="input2" type="text" placeholder="EMail" id="email" name="email">
                 <textarea class="input3" rows="30" cols="50"></textarea>
-                <button type="button">Отправить</button>
+                <button type="submit" >Отправить</button>
+            </form>
             </div>
         </article>
         <script src="slaider.js"></script>
