@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" class="html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вова не хороший</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <header class="header">
         <div class="container">
             <nav>
@@ -139,17 +139,22 @@
                 </div>  
             </div>
         </article>
+        <div id="elementToStyle" class="passvord">
+        <button class="button5" id="resetStyleBtn">X</button>
+        <input class="input3" type="text" placeholder="Пароль из 10 цифр">
+        <input class="input4" type="text" placeholder="EMail">
+        </div>
         <article>
             <div class="container5">
             <form onsubmit="return validateForm()">
                 <input class="input1" type="text" pattern="[0-9]{10}" placeholder="Пароль из 10 цифр">
                 <input class="input2" type="text" placeholder="EMail" id="email" name="email">
                 <textarea class="input3" rows="30" cols="50"></textarea>
-                <button type="submit" >Отправить</button>
+                <button class="button" type="submit" >Отправить</button>    
             </form>
+            <button id="changeStyleBtn" class="button4">Забыли пароль?</button>
             </div>
         </article>
-        <script src="slaider.js"></script>
     </main>
     <footer>
         <div class="footer">
@@ -157,5 +162,7 @@
                 "Papers, Please" and the red eagle logo are registered trademarks of 3909 LLC.</p>
         </div>
     </footer>
+    
 </body>
 </html>
+<script src="slaider.js"></script>
