@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
-html{
+body{
     box-sizing: border-box;
     background-color: #202020;
+    z-index: 0;
 }
 *,
 *::before
@@ -411,7 +412,7 @@ span.sim-dot {
 }
 .container5{
     width: 900px;
-    height: 400px;
+    height: 450px;
     margin:200px auto 20px;
     border-bottom: solid 1px white;
     padding-bottom: 40px;
@@ -457,7 +458,7 @@ span.sim-dot {
     border-radius: 5px;
     color: #ffffff;
 }
-.container5 button{
+.button{
     margin: 20px 350px;
     width: 200px;
     height: 50px;
@@ -469,14 +470,14 @@ span.sim-dot {
     cursor: pointer;
     transform:  scale(1);
 }
-.container5 button:hover{
+.button:hover{
     background-color: #ffffff;
-    border: solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(255, 255, 255);
     color: #000000;
 }
-.container5 button:active{
+.button:active{
     transform:  scale(0.8);
-    transition: 0.3s;
+    transition: 0.1s;
 }
 .footer{
     text-align: center;
@@ -487,3 +488,62 @@ span.sim-dot {
     color: white;
     font-size: 0.7rem;
 }
+.button4{
+    font-size: 1rem;
+    background-color: #202020;
+    color: white;
+    border: solid 1px #202020;
+    cursor: pointer;
+    margin: 0 375px;
+    transform:  scale(0.95);
+    transition: 0.3s;
+}
+.button4:hover{
+    transform:  scale(1);
+    background-color: #cc2e2e;
+}
+
+.passvord{
+    display: none;
+}
+.change-on-focus0{
+    position: fixed;
+    top: 200px;
+    left: 640px;
+    width: 1000px;
+    height: 600px;
+    background-color: #cc2e2e;
+    z-index: 20;
+    border-radius: 5px;
+    border: dashed 5px #ffffff;
+}
+
+.input3{
+    margin-top: 100px;
+    padding-left: 20px;
+    width: 400px;
+    height: 40px;
+    font-size: 22px;
+    background-color: #202020;
+    border: solid 1px white;
+    color: #ffffff;
+    border-radius: 5px;
+    
+}
+.input4{
+margin-top: 100px;
+    padding-left: 20px;
+    float: right;
+    width: 400px;
+    height: 40px;
+    font-size: 22px;
+    background-color: #202020;
+    border: solid 1px white;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.bodys{
+    filter: brightness(1%);
+    z-index: 0;
+}
+
