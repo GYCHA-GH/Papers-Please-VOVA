@@ -230,7 +230,7 @@ function validateForm() {
 const changeStyleBtn = document.getElementById('changeStyleBtn');
 const resetStyleBtn = document.getElementById('resetStyleBtn');
 const elementToStyle = document.getElementById('elementToStyle');
-const body = document.getElementById('body');
+
 changeStyleBtn.addEventListener('click', function() {
     elementToStyle.classList = 'change-on-focus0';
 });
