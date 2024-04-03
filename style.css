@@ -2,7 +2,6 @@
 body{
     box-sizing: border-box;
     background-color: #202020;
-    z-index: 0;
 }
 *,
 *::before
@@ -21,32 +20,95 @@ header{
     
 }
 .container{
+    padding-left: 140px;
+    display: flex;
     margin: 40px auto;
     width: 900px;
     height: 60px;
     border-bottom: solid 1px white;
 }
-.container nav{
-    display: flex;
+.topmenu{
+    padding: 0 20px;
     justify-content: space-between;
-
-}
-.container ul{
-    margin: 0 auto;
+    flex-wrap: wrap;
     display: flex;
-    gap: 0 40px;
+    flex-direction: row;
 }
-.container a{
-    display: flex;
-    gap: 0 40px;
-    color: #ffff;
+nav a{
+    display: block;
+    text-align: center;
     text-decoration: none;
+    transition: .2s linear;
 }
-.container li{
-    list-style-type: none;
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu>li{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.topmenu>li>a{
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    color: white;
+}
+.submenu li a:hover{
+    color: #8d0d0d;
+}
+.a{
+    font-weight: 500;
+    padding: 15px 15px;
+}
+.a1{
+    font-weight: 500;
+    padding: 15px 30px;
+}
+.topmenu>li:hover>a{
+    color: #cc2e2e;
+}
+.topmenu>li:hover{
+    color: #cc2e2e;
+}
+.submenu{
+    position: absolute;
+    z-index: 5;
+    width: 300px;
+    border: 1px solid #cc2e2e;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px #171616;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .3s ease-in-out;
+}
+.submenu li{
+    position: relative;
+}
+.submenu a{
+    background: #202020;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.submenu .submenu{
+    position: absolute;
+    top: 0;
+}
+nav li:hover>.submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
 }
 .container img{
-    width: 7%;
+    margin-left: 100px;
+    float: right;
+    width: 10%;
 }
 .container1{
     padding-top: 20px;
