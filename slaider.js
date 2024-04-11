@@ -239,3 +239,14 @@ resetStyleBtn.addEventListener('click', function() {
 });
 
 
+
+burgerOpen.addEventListener("click", ()=> {
+    burgerMenu.style.right="0%"
+    burgerBack.style.opacity="1"
+    burgerBack.style.visibility="visible"
+})
+burgerClose.addEventListener("click", ()=> {
+    burgerMenu.style.right="-80%"
+    burgerBack.style.opacity="1"
+    burgerBack.style.visibility="visible"
+})
