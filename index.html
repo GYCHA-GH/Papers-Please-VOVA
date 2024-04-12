@@ -60,10 +60,10 @@
                         </ul>
                     </li>
                 </ul>
-                
-            <img src="/img/pngwing.com.png" id="burgerOpen" alt="" class="burger">
+            <img src="/Papers-Please-VOVA-main/img/бургер.png" id="burgerOpen" alt="" class="burger">
             </div>
             <div class="burgerMenu" id="burgerMenu">
+                <img src="img/бургер.png" id="burgerClose" alt="" class="burger2">
                 <ul class="topmenu">
                     <li><a href="" class="a">Главная</a>
                         <ul class="submenuu">
@@ -136,7 +136,7 @@
                         </ul>
                     </li>
                 </ul>
-            <img src="/img/pngwing.com.png" id="burgerClose" alt="" class="burger2">
+            
             </div>
         </nav>
     </header>
@@ -204,25 +204,27 @@
             </div>
         </article>
         <article>
-            <div class="sim-slider">
-                <ul class="sim-slider-list">
-                  <li><img src="img/VOVA.png" alt="screen"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/21.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/22.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/23.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/24.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/25.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/26.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/27.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/28.png" alt="0"></li>
-                  <li class="sim-slider-element"><img class="img" src="img/29.png" alt="0"></li>
-                </ul>
-                <div class="sim-slider-arrow-left"></div>
-                <div class="sim-slider-arrow-right"></div>
-                <div class="sim-slider-dots"></div>
-              </div>
+            <div class="containerSlider">
+                <button class="slider-prev"></button>
+                <div class="slider">
+                    <div class="slider-line">
+                        <img src="img/21.png" alt="">
+                        <img src="img/22.png" alt="">
+                        <img src="img/23.png" alt="">
+                        <img src="img/24.png" alt="">
+                        <img src="img/25.png" alt="">
+                        <img src="img/26.png" alt="">
+                        <img src="img/27.png" alt="">
+                        <img src="img/28.png" alt="">
+                        <img src="img/29.png" alt="">
+                        <img src="img/30.png" alt="">
+                        <img src="img/31.png" alt="">
+                        <img src="img/32.png" alt="">
+                    </div>
+                </div>
+                <button class="slider-next"></button>
+            </div>
         </article>
-        
         <article>
             <div class="container3">
                 <h2>ВРАГ НЕ ПРОЙДЕТ!<span>ГРАНИЦЫ РОДИНЫ ЗФЩИЩЕНЫ ОТ ВРАГОВ <br> position: absolute;</span></h2>
@@ -260,7 +262,7 @@
             <div class="container5">
             <form onsubmit="return validateForm()">
                 <input class="input1" type="text" pattern="[0-9]{10}" placeholder="Пароль из 10 цифр">
-                <input class="input2" type="text" placeholder="EMail" id="email" name="email">
+                <input class="input2" type="text"  pattern="[@-.]{10}" placeholder="EMail">
                 <textarea class="input3" rows="30" cols="50"></textarea>
                 <button class="button" type="submit" >Отправить</button>    
             </form>
