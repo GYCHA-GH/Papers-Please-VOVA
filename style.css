@@ -55,7 +55,10 @@ nav ul{
     color: white;
 }
 .submenu li a:hover{
-    color: #8d0d0d;
+    color: #cc2e2e;
+}
+.submenuu li a:hover{
+    color: #cc2e2e;
 }
 .a{
     font-weight: 500;
@@ -74,8 +77,8 @@ nav ul{
 .submenu{
     position: absolute;
     z-index: 5;
-    width: 300px;
-    border: 1px solid #cc2e2e;
+    width: 200px;
+    border: 1px solid #ede6e6;
     box-sizing: border-box;
     box-shadow: 0px 4px 5px #171616;
     visibility: hidden;
@@ -86,15 +89,15 @@ nav ul{
 .submenuu{
     position: absolute;
     z-index: 100;
-    width: 300px;
-    border: 1px solid #cc2e2e;
+    width: 180px;
+    border: 1px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 0px 4px 5px #171616;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(100px);
-    transition: .3s ease-in-out;
-    margin-left: 10px;
+    transform: translateY(10px);
+    transition: 0.3s ease-in-out;
+    margin-left: 110px;
 }
 .submenu li{
     position: relative;
@@ -107,6 +110,7 @@ nav ul{
     font-size: 1rem;
     padding: 10px 20px;
 }
+
 .submenu .submenu{
     position: absolute;
     top: 0;
@@ -632,27 +636,33 @@ span.sim-dot {
 }
 
 .burger{
+    transform:  scale(1);
     cursor: pointer;
     transition: 0.5s;
-    width: 20px;
+    width: 10%;
 }
 .burger2{
     position: absolute;
     cursor: pointer;
-    width: 50px;
-    height: 20px;
-    margin-left: 100px;
+    width: 20%;
+    margin-top: -25px;
+    margin-left: 220px;
 }
 .burger:active{
-    width: 100px;
-    transition: 0.1s;
+    transform:  scale(0.8);
+    transition: 0.05s;
+}
+.burger2:active{
+    transform:  scale(0.8);
+    transition: 0.05s;
 }
 .burgerMenu{
+    padding-top: 50px;
     width: 300px;
     height: 600px;
-    background-color: #8d0d0d;
+    background-color: #5a6e5a;
     border: solid #ffffff;
-    z-index: 1;
+    z-index: 20;
     right: 0%;
     float: left;
     position: fixed;
@@ -662,3 +672,84 @@ span.sim-dot {
 }
 
 
+.submenuu li{
+    position: relative;
+}
+.submenuu a{
+    border-bottom: 1px solid #ffffff ;
+    background: #3b483b;                              
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.submenuu .submenuu{
+    position: absolute;
+    top: 0;
+}
+nav li:hover>.submenuu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-45px);
+}
+
+/*о наш любимый слайдер*/
+.containerSlider{
+    margin:200px auto 20px;
+    display: flex;
+    width: 900px;
+    padding: 30px;
+}
+.slider-prev{
+    margin-top: 25%;
+    background: none;
+    background-image: url(img/назад.png);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-size: cover;
+    color: #202020;
+    border: none;
+    transition: 0.3s;
+}
+.slider-prev:hover{
+    transform:  scale(0.8);
+    transition: 0.3s;
+}
+
+.slider-next{
+    margin-top: 25%;
+    background: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url(img/вперёт.png);
+    background-size: cover;
+    border: none;
+    transition: 0.3s;
+}
+.slider-next:hover{
+    transform:  scale(0.8);
+    transition: 0.3s;
+}
+.slider {
+    display: flex;
+    width: 980px;
+    height: 500px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.slider-line {
+    width: 980px;
+    height: 500px;
+    display: flex;
+    background: orange;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+} 
+.slider-line img{
+    width: 980px;
+    height: 500px;
+}
